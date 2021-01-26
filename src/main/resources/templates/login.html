@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>LOGIN</h1>
+<a th:href="@{/oauth2/authorization/google}">Login with google</a>
+<form th:action="@{/login}" method="post">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Password</label>
+    <input type="text" name="password" id="password"/>
+    <button type="submit">LOGIN</button>
+</form>
+
+</body>
+</html>
